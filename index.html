@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Healthy Church</title>
+<meta name="description" content="What Scripture shows a healthy church to be: every church in the New Testament, how churches began, how leaders were raised up, and what maturity is, from Genesis to Revelation (BSB).">
+<meta name="theme-color" content="#2d6a4f" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16181c" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Church">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="appbar">
+  <button class="iconbtn" id="back" aria-label="Back" hidden>
+    <svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>
+  </button>
+  <h1 id="title">Healthy Church</h1>
+  <button class="pill" id="install" hidden>Install</button>
+</header>
+
+<main id="view" tabindex="-1"></main>
+
+<nav class="tabbar" aria-label="Main">
+  <a href="#home" data-tab="home">
+    <svg viewBox="0 0 24 24"><path d="M12 3v18M6 8h12"/></svg><span>Home</span></a>
+  <a href="#churches" data-tab="churches">
+    <svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V10l7-5 7 5v11M10 21v-5h4v5"/></svg><span>Churches</span></a>
+  <a href="#marks" data-tab="marks">
+    <svg viewBox="0 0 24 24"><path d="M3 7c3 0 3 4 6 4s3-4 6-4 3 4 6 4M3 15c3 0 3 4 6 4s3-4 6-4 3 4 6 4"/></svg><span>Marks</span></a>
+  <a href="#planting" data-tab="planting">
+    <svg viewBox="0 0 24 24"><path d="M12 21v-9M12 12c0-4 3-7 7-7 0 4-3 7-7 7zM12 15c0-3-2.5-5.5-6-5.5 0 3.5 2.5 5.5 6 5.5z"/></svg><span>Planting</span></a>
+  <a href="#leaders" data-tab="leaders">
+    <svg viewBox="0 0 24 24"><circle cx="8" cy="6" r="2.5"/><circle cx="16" cy="6" r="2.5"/><path d="M4 20v-5a4 4 0 0 1 8 0v5M12 20v-5a4 4 0 0 1 8 0v5"/></svg><span>Leaders</span></a>
+</nav>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="passages.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
