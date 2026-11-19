@@ -35,6 +35,8 @@ START.forEach(([id, cells]) => Object.values(cells).forEach(r => use(r, CH.get(i
 const LISTS = [["mark", MARKS], ["stage", PLANTING], ["lead", LEADERS], ["mature", MATURITY], ["story", STORY]];
 LISTS.forEach(([k, rows]) => rows.forEach((row, i) => row[2].forEach(r => use(r, `“${row[0]}”`, `#${k}-${i}`))));
 HANDOFFS.forEach(([who, refs]) => refs.forEach(r => use(r, who, "#handoffs")));
+COMMISSION.forEach(([head, , , refs]) => refs.forEach(r => use(r, head, "#commission")));
+Object.entries(TIMELINE).forEach(([id, evs]) => evs.forEach(e => use(e[3], CH.get(id)[1], `#church-${id}`)));
 
 /* One passage: the text with verse numbers, and its reference. */
 function passage(ref, opts = {}) {
@@ -119,6 +121,8 @@ function homeScreen() {
     <p class="label" style="margin-top:26px">How churches began</p>
     ${row("#planting", "From the first preaching to maturity", `${PLANTING.length} stages, in the order Acts shows them`)}
     ${row("#start", "What was there at the start", `${START.length} churches side by side: the minimum Scripture shows`)}
+    ${row("#timeline", "Timeline of every church", "When each began, how long they stayed, when leaders were named")}
+    ${row("#commission", "Sent, appointed, recognized", "Does a church need to be commissioned?")}
 
     <p class="label" style="margin-top:26px">Raising up leaders</p>
     ${row("#leaders", "From the apostles to faithful men", `${LEADERS.length} steps, and how the apostles left`)}
@@ -158,6 +162,7 @@ function churchScreen(id) {
   const start = START.find(s => s[0] === id);
   return { title: name, tab: "churches", back: "#churches", html: `
     <div class="hero church"><p class="n">The church in</p><h2>${name}</h2><p class="where">${where}</p></div>
+    ${churchChart(id)}
     ${kinds.length > 2 ? `<div class="jump"><div class="chips">${kinds.map(([k, l]) => `<button class="chip" data-jump="k-${k}">${l}</button>`).join("")}</div></div>` : ""}
     ${kinds.map(([k, label]) => `<div class="kind" id="k-${k}">${label} <small>${secs[k].length}</small></div>${list(secs[k], { tags: true, here: `#church-${id}` })}`).join("")}
     ${start ? `<a class="cmdrow" href="#start" style="--c:var(--accent);margin-top:18px"><span class="txt"><b>What was there at the start</b>
@@ -166,6 +171,79 @@ function churchScreen(id) {
       ${prev ? `<a href="#church-${prev}">← ${CH.get(prev)[1]}</a>` : ""}
       ${next ? `<a class="next" href="#church-${next}">${CH.get(next)[1]} →</a>` : ""}
     </div>` };
+}
+
+
+/* ---------- Timelines ---------- */
+const Y0 = 30, Y1 = 96;
+const TYPE_NAME = new Map(EVENT_TYPES);
+const yr = y => `c. AD ${y}`;
+const pos = y => ((y - Y0) / (Y1 - Y0) * 100).toFixed(2) + "%";
+const events = id => (TIMELINE[id] || []).map((e, i) => ({ y: e[0], t: e[1], label: e[2], ref: e[3], q: e[4], end: e[5], i }))
+  .sort((a, b) => a.y - b.y || a.i - b.i);
+const gap = n => n <= 0 ? "the same year" : n === 1 ? "about a year later" : `about ${n} years later`;
+function summary(id) {
+  const ev = events(id), begin = ev.find(e => e.t === "begin"), lead = ev.find(e => e.t === "leaders");
+  return { ev, begin, lead, stays: ev.filter(e => e.t === "stay"), last: ev[ev.length - 1],
+    gap: begin && lead ? gap(lead.y - begin.y) : "" };
+}
+/* One church's span on the AD 30–95 line, with a dot for each event. */
+function track(id, ev) {
+  if (!ev.length) return "";
+  const a = ev[0].y, b = Math.max(...ev.map(e => e.end || e.y));
+  return `<div class="track"><i class="span" style="left:${pos(a)};width:calc(${pos(b)} - ${pos(a)})"></i>
+    ${ev.filter(e => e.end).map(e => `<i class="stayspan" style="left:${pos(e.y)};width:calc(${pos(e.end)} - ${pos(e.y)})"></i>`).join("")}
+    ${ev.map(e => `<i class="ev t-${e.t}" style="left:${pos(e.y)}" title="${esc(yr(e.y) + " · " + e.label)}"></i>`).join("")}</div>`;
+}
+const axis = () => `<div class="axis">${[30, 40, 50, 60, 70, 80, 90].map(y => `<span style="left:${pos(y)}">${y}</span>`).join("")}</div>`;
+const legend = () => `<div class="legend">${EVENT_TYPES.map(([t, l]) => `<span><i class="ev t-${t}"></i>${l}</span>`).join("")}</div>`;
+const NOTE = `Years are approximate (AD), following a commonly used chronology. Scripture gives the order and the length of each stay, not the years. Gallio's term in Corinth (Acts 18:12) is fixed by an inscription at AD 51–52, and the other years are counted from it; scholars differ by a few years.`;
+
+/* The summary chart at the top of a church's page. */
+function churchChart(id) {
+  const s = summary(id); if (!s.ev.length) return "";
+  const tile = (label, big, small) => `<div><small>${label}</small><b>${big}</b>${small ? `<em>${small}</em>` : ""}</div>`;
+  return `<div class="card chart">
+    <p class="label">Timeline</p>
+    <div class="facts">
+      ${tile("Began", s.begin ? yr(s.begin.y) : "Not stated", s.begin ? s.begin.ref : "")}
+      ${tile("Stayed", s.stays.length ? s.stays.map(e => "“" + esc(e.q) + "”").join("<br>") : "Not stated", s.stays.map(e => e.ref).join(" · "))}
+      ${tile("Leaders", s.lead ? yr(s.lead.y) : "Not named", s.lead ? `${s.begin ? s.gap + " · " : ""}${s.lead.ref}` : "")}
+      ${tile("Last word", yr(s.last.y), s.last.ref)}
+    </div>
+    ${track(id, s.ev)}${axis()}
+    <ol class="tl">${s.ev.map(e => `<li class="t-${e.t}"><details><summary><span class="yr">${e.y}${e.end ? "–" + e.end : ""}</span>
+      <span class="what"><b>${esc(e.label)}</b><small><i class="ev t-${e.t}"></i>${TYPE_NAME.get(e.t)} · “${esc(e.q)}” · ${e.ref}</small></span></summary>
+      ${passage(e.ref)}</details></li>`).join("")}</ol>
+    <p class="fine">Tap an event to read the verse. ${NOTE}</p>
+  </div>`;
+}
+
+const ORDERED = () => GROUPS.flatMap(g => g[2]).filter((x, i, a) => a.indexOf(x) === i);
+function timelineScreen() {
+  const ids = ORDERED();
+  const withLead = ids.map(id => [id, summary(id)]).filter(([, s]) => s.begin || s.lead || s.stays.length);
+  return { title: "Timeline", tab: "planting", back: "#planting", html: `
+    <p class="lead">Every church on one line, from Pentecost to the letters of Revelation. Tap a church for its own timeline.</p>
+    ${legend()}
+    <div class="gantt">${ids.map(id => `<a class="grow" href="#church-${id}"><span class="gname">${CH.get(id)[1]}</span>${track(id, events(id))}</a>`).join("")}
+      <div class="grow"><span class="gname"></span>${axis()}</div></div>
+
+    <p class="label" style="margin-top:22px">From the beginning to leaders</p>
+    <div class="gridwrap"><table class="sumtab"><thead><tr><th>Church</th><th>Began</th><th>Leaders</th><th>Stayed</th></tr></thead>
+      <tbody>${withLead.map(([id, s]) => `<tr><th><a href="#church-${id}">${CH.get(id)[1]}</a></th>
+        <td class="nw">${s.begin ? yr(s.begin.y) : "—"}</td>
+        <td class="nw">${s.lead ? `${yr(s.lead.y)}${s.begin ? `<br><small>${s.gap}</small>` : ""}` : "—"}</td>
+        <td>${s.stays.length ? s.stays.map(e => "“" + esc(e.q) + "”").join("; ") : "—"}</td></tr>`).join("")}</tbody></table></div>
+    <p class="fine">${NOTE}</p>` };
+}
+
+function commissionScreen() {
+  return { title: "Sent, appointed, recognized", tab: "planting", back: "#planting", html: `
+    <p class="lead">Scripture never shows a church itself being commissioned. It shows workers being sent and leaders being appointed. Some churches began with no one sent, and every church was then recognized and strengthened by the wider church.</p>
+    ${COMMISSION.map(([head, phrase, pref, refs]) => `<div class="kind">${head}</div>
+      <p class="phrase" style="font-family:Georgia,serif;font-size:19px;margin:0 0 2px">“${esc(phrase)}”</p><span class="ref" style="margin-bottom:8px">${pref}</span>
+      ${list(canon(refs), { tags: true })}`).join("")}` };
 }
 
 /* Marks */
@@ -186,7 +264,9 @@ function plantingScreen() {
       <span class="ref">${p[1]} · ${p[2].length} passages</span></a></li>`).join("")}</ol>
     <p class="label" style="margin-top:22px">The minimum</p>
     ${row("#start", "What was there at the start", `${START.length} new churches side by side`)}
-    ${row("#stay", "How long the apostles stayed", "Every place Scripture gives the time")}` };
+    ${row("#stay", "How long the apostles stayed", "Every place Scripture gives the time")}
+    ${row("#timeline", "Timeline of every church", "From Pentecost to Revelation, with leaders and stays")}
+    ${row("#commission", "Sent, appointed, recognized", "Workers sent, leaders appointed, churches recognized")}` };
 }
 const stageScreen = n => phraseScreen("stage", PLANTING, n, { title: "Planting", tab: "planting", back: "#planting", label: "Stage" }) || plantingScreen();
 
@@ -226,7 +306,8 @@ function leadersScreen() {
     <ol class="steps path">${LEADERS.map((p, i) => `<li><a href="#lead-${i}"><span class="phrase">“${esc(p[0])}”</span>
       <span class="ref">${p[1]} · ${p[2].length} passages</span></a></li>`).join("")}</ol>
     <p class="label" style="margin-top:22px">Across the whole Bible</p>
-    ${row("#handoffs", "Handing on the work", HANDOFFS.map(h => h[0]).join(" · "))}` };
+    ${row("#handoffs", "Handing on the work", HANDOFFS.map(h => h[0]).join(" · "))}
+    ${row("#commission", "Sent, appointed, recognized", "Workers sent, leaders appointed, churches recognized")}` };
 }
 const leadScreen = n => phraseScreen("lead", LEADERS, n, { title: "Leaders", tab: "leaders", back: "#leaders", label: "Step", scope: true }) || leadersScreen();
 function handoffsScreen() {
@@ -283,6 +364,8 @@ function route() {
     : name === "stage" ? stageScreen(+arg)
     : name === "start" ? startScreen()
     : name === "stay" ? stayScreen()
+    : name === "timeline" ? timelineScreen()
+    : name === "commission" ? commissionScreen()
     : name === "leaders" ? leadersScreen()
     : name === "lead" ? leadScreen(+arg)
     : name === "handoffs" ? handoffsScreen()

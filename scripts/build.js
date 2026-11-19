@@ -11,7 +11,7 @@ const root = path.join(__dirname, "..");
 const ctx = {};
 vm.createContext(ctx);
 vm.runInContext(fs.readFileSync(path.join(root, "data.js"), "utf8") +
-  "\nthis.D={KINDS,CHURCHES,GROUPS,ELEMENTS,START,PLANTING,MARKS,STORY,LEADERS,HANDOFFS,MATURITY};", ctx);
+  "\nthis.D={COMMISSION,TIMELINE,EVENT_TYPES,KINDS,CHURCHES,GROUPS,ELEMENTS,START,PLANTING,MARKS,STORY,LEADERS,HANDOFFS,MATURITY};", ctx);
 const D = ctx.D;
 
 const errors = [];
@@ -67,6 +67,19 @@ phrased("STORY", D.STORY);
 phrased("LEADERS", D.LEADERS);
 phrased("MATURITY", D.MATURITY);
 D.HANDOFFS.forEach(([who, refs]) => { refs.forEach(add); lists.push([`HANDOFF ${who}`, refs]); });
+D.COMMISSION.forEach(([head, phrase, pref, refs]) => phrased("COMMISSION", [[phrase, pref, refs]]));
+const TYPES = new Set(D.EVENT_TYPES.map(t => t[0]));
+Object.entries(D.TIMELINE).forEach(([id, evs]) => {
+  if (!ids.has(id)) errors.push(`Unknown church "${id}" in TIMELINE`);
+  evs.forEach(([y, t, label, ref, quote]) => {
+    if (!TYPES.has(t)) errors.push(`Unknown event type "${t}" in ${id}`);
+    const p = add(ref);
+    if (p && !norm(p.verses.map(v => v[2]).join(" ")).includes(norm(quote))) errors.push(`TIMELINE ${id}: "${quote}" is not in ${ref}`);
+    lists.push([`TIMELINE ${id} ${y} ${label}`, [ref]]);
+  });
+});
+D.CHURCHES.forEach(c => D.TIMELINE[c[0]] || errors.push(`No timeline for ${c[0]}`));
+
 
 if (errors.length) { console.error([...new Set(errors)].join("\n")); process.exit(1); }
 

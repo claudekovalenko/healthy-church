@@ -10,6 +10,7 @@ Scripture quotations are from the Berean Standard Bible (BSB), dedicated to the 
 2. [Marks of a healthy church](#marks-of-a-healthy-church)
 3. [How churches began](#how-churches-began)
 4. [What was there at the start](#what-was-there-at-the-start)
+4b. [Timeline of every church](#timeline-of-every-church) · [Sent, appointed, recognized](#sent-appointed-recognized)
 5. [Raising up leaders](#raising-up-leaders)
 6. [Handing on the work](#handing-on-the-work)
 7. [A mature church](#a-mature-church)
@@ -1848,6 +1849,363 @@ A blank means Scripture does not say, not that it was missing.
 | Corinth | Acts 18:5 | Acts 18:8 | Acts 18:8 |  | Acts 18:7 | Acts 18:11 | 1 Corinthians 16:15 | Acts 18:18 | Acts 18:12 | Acts 18:11 |
 | Ephesus | Acts 19:8 | Acts 19:18 | Acts 19:5 | Acts 19:6 | Acts 20:20 | Acts 19:9 | Acts 20:17 | Acts 20:32 | Acts 20:19 | Acts 20:31 |
 | Crete |  |  |  |  |  | Titus 2:1 | Titus 1:5 | Titus 1:5 |  |  |
+
+## Timeline of every church
+
+Years are approximate (AD), following a commonly used chronology. Scripture gives the order and the length of each stay, not the years. Gallio's term in Corinth (Acts 18:12) is fixed by an inscription at AD 51–52, and the other years are counted from it.
+
+### Jerusalem
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 30 | Began | Pentecost: about three thousand baptized | “about three thousand were added” (Acts 2:41) |
+| c. 30–49 | Stayed | The apostles stayed in Jerusalem | “all except the apostles” (Acts 8:1) |
+| c. 31 | Leaders | The Seven chosen to serve | “select from among you seven men” (Acts 6:3) |
+| c. 34 | Suffering | Persecution scatters the church | “a great persecution broke out against the church in Jerusalem” (Acts 8:1) |
+| c. 37 | Visited or strengthened | Paul's first visit, three years after his conversion | “Only after three years” (Galatians 1:18) |
+| c. 44 | Suffering | Herod kills James and seizes Peter | “put to death with the sword” (Acts 12:2) |
+| c. 45 | Leaders | Elders receive the famine relief | “sending their gifts to the elders” (Acts 11:30) |
+| c. 49 | Leaders | Apostles and elders meet in council | “the apostles and elders met” (Acts 15:6) |
+| c. 57 | Visited or strengthened | Paul with James and all the elders | “all the elders were present” (Acts 21:18) |
+
+### Samaria
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 34 | Began | Philip preaches; men and women baptized | “they were baptized, both men and women” (Acts 8:12) |
+| c. 34 | Visited or strengthened | Peter and John sent from Jerusalem | “they sent Peter and John to them” (Acts 8:14) |
+| c. 34 | Left | Peter and John return to Jerusalem | “they returned to Jerusalem” (Acts 8:25) |
+| c. 36 | Later word | The church at peace and growing | “It grew in strength and numbers” (Acts 9:31) |
+
+### Damascus
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 34 | Began | Disciples already in Damascus | “In Damascus there was a disciple” (Acts 9:10) |
+| c. 34 | Stayed | Saul with the disciples | “he spent several days with the disciples in Damascus” (Acts 9:19) |
+| c. 34–37 | Stayed | Arabia, then back to Damascus | “Only after three years” (Galatians 1:17–18) |
+| c. 37 | Left | Saul let down over the wall | “lowered him in a basket” (Acts 9:25) |
+
+### Lydda and Joppa
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 38 | Visited or strengthened | Peter visits the saints in Lydda | “he went to visit the saints in Lydda” (Acts 9:32) |
+| c. 38 | Began | Many believe in Joppa | “many people believed in the Lord” (Acts 9:42) |
+| c. 38 | Stayed | Peter stays in Joppa | “Peter stayed for several days in Joppa” (Acts 9:43) |
+
+### Caesarea
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 40 | Began | The Spirit falls; Gentiles baptized | “he ordered that they be baptized” (Acts 10:48) |
+| c. 40 | Stayed | Peter stays | “stay for a few days” (Acts 10:48) |
+| c. 57 | Later word | Paul stays with Philip the evangelist | “stayed at the home of Philip the evangelist” (Acts 21:8) |
+
+### Antioch in Syria
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 40 | Began | Believers from Cyprus and Cyrene preach to Greeks | “a great number of people believed” (Acts 11:21) |
+| c. 42 | Visited or strengthened | Barnabas sent from Jerusalem | “they sent Barnabas to Antioch” (Acts 11:22) |
+| c. 43–44 | Stayed | Barnabas and Saul teach the church | “for a full year” (Acts 11:26) |
+| c. 45 | Sent out or gave | Relief sent to Judea | “decided to send relief” (Acts 11:29) |
+| c. 46 | Leaders | Prophets and teachers lead the church | “there were prophets and teachers” (Acts 13:1) |
+| c. 47 | Sent out or gave | Barnabas and Saul sent out | “sent them off” (Acts 13:3) |
+| c. 48–49 | Stayed | Paul and Barnabas return | “they spent a long time there” (Acts 14:28) |
+| c. 49 | Visited or strengthened | The council's letter delivered | “delivered the letter” (Acts 15:30) |
+| c. 50 | Sent out or gave | Paul and Silas sent out | “commended by the brothers” (Acts 15:40) |
+| c. 52 | Stayed | Paul returns | “spent some time in Antioch” (Acts 18:23) |
+
+### Pisidian Antioch
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 47 | Began | Gentiles believe | “all who were appointed for eternal life believed” (Acts 13:48) |
+| c. 47 | Stayed | Two Sabbaths | “On the following Sabbath” (Acts 13:44) |
+| c. 47 | Left | Driven out | “drove them out of their district” (Acts 13:50) |
+| c. 48 | Leaders | Elders appointed on the return trip | “appointed elders for them in each church” (Acts 14:23) |
+| c. 50 | Visited or strengthened | Paul and Silas pass through | “the region of Phrygia and Galatia” (Acts 16:6) |
+| c. 53 | Visited or strengthened | Paul strengthens the disciples | “strengthening all the disciples” (Acts 18:23) |
+
+### Iconium
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 47 | Began | Jews and Greeks believe | “a great number of Jews and Greeks believed” (Acts 14:1) |
+| c. 47 | Stayed | A long stay | “spent considerable time there” (Acts 14:3) |
+| c. 47 | Left | Fled from a plot to stone them | “fled to the Lycaonian cities” (Acts 14:6) |
+| c. 48 | Leaders | Elders appointed on the return trip | “appointed elders for them in each church” (Acts 14:23) |
+| c. 50 | Visited or strengthened | The brothers commend Timothy | “spoke well of him” (Acts 16:2) |
+| c. 53 | Visited or strengthened | Paul strengthens the disciples | “strengthening all the disciples” (Acts 18:23) |
+
+### Lystra
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 47 | Began | The gospel preached | “they continued to preach the gospel” (Acts 14:7) |
+| c. 47 | Suffering | Paul stoned | “They stoned Paul” (Acts 14:19) |
+| c. 47 | Left | Paul leaves the next day | “the next day he left with Barnabas” (Acts 14:20) |
+| c. 48 | Leaders | Elders appointed on the return trip | “appointed elders for them in each church” (Acts 14:23) |
+| c. 50 | Sent out or gave | Timothy joins Paul | “Paul wanted Timothy to accompany him” (Acts 16:3) |
+| c. 53 | Visited or strengthened | Paul strengthens the disciples | “strengthening all the disciples” (Acts 18:23) |
+
+### Derbe
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 47 | Began | Many disciples made | “made many disciples” (Acts 14:21) |
+| c. 50 | Visited or strengthened | Paul returns | “Paul came to Derbe” (Acts 16:1) |
+| c. 57 | Sent out or gave | Gaius travels with Paul | “Gaius from Derbe” (Acts 20:4) |
+
+### The churches of Galatia
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 47 | Began | Paul first preaches, because of an illness | “I first preached the gospel to you” (Galatians 4:13) |
+| c. 48 | Leaders | Elders appointed on the return trip | “appointed elders for them in each church” (Acts 14:23) |
+| c. 49 | Letter | Letter to the Galatians (some date it c. AD 55) | “how quickly you are deserting” (Galatians 1:6) |
+| c. 53 | Visited or strengthened | Paul strengthens the disciples | “strengthening all the disciples” (Acts 18:23) |
+| c. 55 | Sent out or gave | Collection for Jerusalem | “as I directed the churches of Galatia” (1 Corinthians 16:1) |
+
+### Philippi
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 49 | Began | Lydia and her household baptized | “she and her household had been baptized” (Acts 16:15) |
+| c. 49 | Stayed | Several days | “we stayed there several days” (Acts 16:12) |
+| c. 49 | Suffering | Paul and Silas beaten and jailed | “they threw them into prison” (Acts 16:23) |
+| c. 49 | Left | They leave the city | “Then they left the city” (Acts 16:40) |
+| c. 50 | Sent out or gave | Gifts sent to Paul in Thessalonica | “Thessalonica” (Philippians 4:16) |
+| c. 56 | Visited or strengthened | Paul passes through Macedonia | “speaking many words of encouragement” (Acts 20:2) |
+| c. 57 | Visited or strengthened | Paul sails from Philippi | “we sailed from Philippi” (Acts 20:6) |
+| c. 61 | Leaders | Letter to the overseers and deacons | “together with the overseers and deacons” (Philippians 1:1) |
+
+### Thessalonica
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 50 | Began | Jews and God-fearing Greeks persuaded | “Some of the Jews were persuaded” (Acts 17:4) |
+| c. 50 | Stayed | Three Sabbaths | “on three Sabbaths” (Acts 17:2) |
+| c. 50 | Left | Sent away by night | “the brothers sent Paul and Silas away” (Acts 17:10) |
+| c. 50 | Visited or strengthened | Timothy sent back | “We sent Timothy” (1 Thessalonians 3:2) |
+| c. 51 | Leaders | First letter names their leaders | “who preside over you in the Lord” (1 Thessalonians 5:12) |
+| c. 51 | Letter | Second letter | “your faith is growing more and more” (2 Thessalonians 1:3) |
+| c. 57 | Sent out or gave | Aristarchus and Secundus travel with Paul | “Aristarchus and Secundus from Thessalonica” (Acts 20:4) |
+
+### Berea
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 50 | Began | Many believe | “many of them believed” (Acts 17:12) |
+| c. 50 | Left | Paul sent to the coast | “sent Paul to the coast” (Acts 17:14) |
+| c. 50 | Stayed | Silas and Timothy stay on | “Silas and Timothy remained in Berea” (Acts 17:14) |
+| c. 57 | Sent out or gave | Sopater travels with Paul | “Sopater son of Pyrrhus from Berea” (Acts 20:4) |
+
+### Athens
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 50 | Began | Some believe | “some joined him and believed” (Acts 17:34) |
+| c. 50 | Left | Paul leaves for Corinth | “Paul left Athens” (Acts 18:1) |
+
+### Corinth
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 50 | Began | Many believe and are baptized | “believed and were baptized” (Acts 18:8) |
+| c. 50–52 | Stayed | A year and a half | “a year and a half” (Acts 18:11) |
+| c. 51 | Suffering | Brought before Gallio | “brought him before the judgment seat” (Acts 18:12) |
+| c. 52 | Left | Paul says goodbye | “saying goodbye to the brothers” (Acts 18:18) |
+| c. 52 | Visited or strengthened | Apollos comes | “he was a great help” (Acts 18:27) |
+| c. 55 | Leaders | First letter: submit to Stephanas's household | “submit to such as these” (1 Corinthians 16:15–16) |
+| c. 55 | Visited or strengthened | Timothy sent | “I have sent you Timothy” (1 Corinthians 4:17) |
+| c. 56 | Letter | Second letter, after Titus's report | “by the arrival of Titus” (2 Corinthians 7:6) |
+| c. 57 | Stayed | Three months in Greece | “he stayed three months” (Acts 20:3) |
+
+### Ephesus
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 52 | Began | Paul reasons in the synagogue | “reasoned with the Jews” (Acts 18:19) |
+| c. 52 | Left | Paul leaves, promising to return | “I will come back to you if God is willing” (Acts 18:21) |
+| c. 52 | Visited or strengthened | Priscilla and Aquila teach Apollos | “explained to him the way of God more accurately” (Acts 18:26) |
+| c. 53 | Visited or strengthened | Paul returns; twelve disciples baptized | “baptized into the name of the Lord Jesus” (Acts 19:5) |
+| c. 53 | Stayed | Three months in the synagogue | “for three months” (Acts 19:8) |
+| c. 53–55 | Stayed | Two years in the hall of Tyrannus | “This continued for two years” (Acts 19:10) |
+| c. 55 | Left | Paul leaves for Macedonia | “left for Macedonia” (Acts 20:1) |
+| c. 57 | Leaders | Paul meets the elders at Miletus | “the elders of the church” (Acts 20:17) |
+| c. 57 | Left | His last farewell to them | “will see my face again” (Acts 20:25) |
+| c. 61 | Letter | Letter to the Ephesians | “ever since I heard about your faith” (Ephesians 1:15) |
+| c. 63 | Visited or strengthened | Timothy left in Ephesus | “stay on at Ephesus” (1 Timothy 1:3) |
+| c. 95 | Later word | The Lord's word to Ephesus | “You have abandoned your first love” (Revelation 2:4) |
+
+### Troas
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 55 | Began | A door opened for the gospel | “a door stood open for me” (2 Corinthians 2:12) |
+| c. 57 | Stayed | Seven days | “where we stayed seven days” (Acts 20:6) |
+| c. 57 | Left | Paul leaves at daybreak | “after speaking until daybreak, he departed” (Acts 20:11) |
+
+### Colossae
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 54 | Began | Epaphras brings the gospel (likely during Paul's years in Ephesus) | “You learned it from Epaphras” (Colossians 1:7) |
+| c. 60 | Letter | Letter to the Colossians | “your orderly condition and firm faith” (Colossians 2:5) |
+| c. 60 | Visited or strengthened | Tychicus sent | “I have sent him to you” (Colossians 4:8) |
+| c. 60 | Leaders | Archippus charged with his ministry | “complete the ministry you have received” (Colossians 4:17) |
+
+### Laodicea and Hierapolis
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 54 | Began | Epaphras labors for them | “for those at Laodicea and Hierapolis” (Colossians 4:13) |
+| c. 60 | Letter | Letters exchanged with Colossae | “read in the church of the Laodiceans” (Colossians 4:16) |
+| c. 95 | Later word | The Lord's word to Laodicea | “you are neither cold nor hot” (Revelation 3:15) |
+
+### Rome
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 30 | Began | Visitors from Rome at Pentecost | “visitors from Rome” (Acts 2:10) |
+| c. 57 | Letter | Letter to the Romans | “your faith is being proclaimed all over the world” (Romans 1:8) |
+| c. 60 | Visited or strengthened | The brothers meet Paul on the road | “traveled as far as the Forum of Appius” (Acts 28:15) |
+| c. 60–62 | Stayed | Two years in his rented house | “two full years” (Acts 28:30) |
+
+### Crete
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 30 | Began | Cretans at Pentecost | “Cretans” (Acts 2:11) |
+| c. 63 | Stayed | Titus left in Crete | “The reason I left you in Crete” (Titus 1:5) |
+| c. 63 | Leaders | Elders to be appointed in every town | “appoint elders in every town” (Titus 1:5) |
+
+### Tyre, Ptolemais, Sidon and Puteoli
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 57 | Stayed | Seven days with the disciples in Tyre | “stayed with them seven days” (Acts 21:4) |
+| c. 57 | Stayed | A day in Ptolemais | “stayed with them for a day” (Acts 21:7) |
+| c. 59 | Visited or strengthened | Friends in Sidon care for Paul | “visit his friends” (Acts 27:3) |
+| c. 60 | Stayed | A week in Puteoli | “spend the week with them” (Acts 28:14) |
+
+### The churches of 1 Peter
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 63 | Leaders | Peter writes to their elders | “I appeal to the elders among you” (1 Peter 5:1) |
+
+### The church of Hebrews
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 65 | Leaders | Remember and obey your leaders | “Remember your leaders” (Hebrews 13:7) |
+| c. 65 | Later word | Looking back to their early days | “Remember the early days” (Hebrews 10:32) |
+
+### The church of James
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 48 | Leaders | Call the elders of the church | “call the elders of the church” (James 5:14) |
+
+### The churches of John's letters
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 90 | Letter | Second letter | “walking in the truth” (2 John 4) |
+| c. 90 | Letter | Third letter: Diotrephes | “Diotrephes, who loves to be first” (3 John 9) |
+
+### Smyrna
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 54 | Began | All Asia hears the word (likely when it began) | “everyone who lived in the province of Asia” (Acts 19:10) |
+| c. 95 | Later word | The Lord's word to Smyrna | “Be faithful even unto death” (Revelation 2:10) |
+
+### Pergamum
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 54 | Began | All Asia hears the word (likely when it began) | “everyone who lived in the province of Asia” (Acts 19:10) |
+| c. 95 | Later word | The Lord's word to Pergamum | “you have held fast to My name” (Revelation 2:13) |
+
+### Thyatira
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 49 | Visited or strengthened | Lydia of Thyatira believes, in Philippi | “from the city of Thyatira” (Acts 16:14) |
+| c. 54 | Began | All Asia hears the word (likely when it began) | “everyone who lived in the province of Asia” (Acts 19:10) |
+| c. 95 | Later word | The Lord's word to Thyatira | “your latter deeds are greater than your first” (Revelation 2:19) |
+
+### Sardis
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 54 | Began | All Asia hears the word (likely when it began) | “everyone who lived in the province of Asia” (Acts 19:10) |
+| c. 95 | Later word | The Lord's word to Sardis | “you have a reputation for being alive” (Revelation 3:1) |
+
+### Philadelphia
+
+| Year | | What happened | Scripture |
+|---|---|---|---|
+| c. 54 | Began | All Asia hears the word (likely when it began) | “everyone who lived in the province of Asia” (Acts 19:10) |
+| c. 95 | Later word | The Lord's word to Philadelphia | “you have kept My word” (Revelation 3:8) |
+
+## Sent, appointed, recognized
+
+### Workers were sent: “Set apart for Me Barnabas and Saul” (Acts 13:2)
+
+> When the apostles in Jerusalem heard that Samaria had received the word of God, they sent Peter and John to them. (Acts 8:14)
+
+> When news of this reached the ears of the church in Jerusalem, they sent Barnabas to Antioch. (Acts 11:22)
+
+> <sup>2</sup>While they were worshiping the Lord and fasting, the Holy Spirit said, “Set apart for Me Barnabas and Saul for the work to which I have called them.” <sup>3</sup>And after they had fasted and prayed, they laid their hands on them and sent them off. (Acts 13:2–3)
+
+> Then the apostles and elders, with the whole church, decided to select men from among them to send to Antioch with Paul and Barnabas. They chose Judas called Barsabbas and Silas, two leaders among the brothers, (Acts 15:22)
+
+> but Paul chose Silas and left, commended by the brothers to the grace of the Lord. (Acts 15:40)
+
+> And how can they preach unless they are sent? As it is written: “How beautiful are the feet of those who bring good news!” (Romans 10:15)
+
+> You learned it from Epaphras, our beloved fellow servant, who is a faithful minister of Christ on our behalf, (Colossians 1:7)
+
+### Leaders were appointed: “Paul and Barnabas appointed elders for them in each church” (Acts 14:23)
+
+> Therefore, brothers, select from among you seven men confirmed to be full of the Spirit and wisdom. We will appoint this responsibility to them (Acts 6:3)
+
+> They presented these seven to the apostles, who prayed and laid their hands on them. (Acts 6:6)
+
+> Paul and Barnabas appointed elders for them in each church, praying and fasting as they entrusted them to the Lord, in whom they had believed. (Acts 14:23)
+
+> Do not neglect the gift that is in you, which was given you through the prophecy spoken over you at the laying on of the hands of the elders. (1 Timothy 4:14)
+
+> The reason I left you in Crete was that you would set in order what was unfinished and appoint elders in every town, as I directed you. (Titus 1:5)
+
+### Some churches began with no one sent: “Those who had been scattered preached the word wherever they went” (Acts 8:4)
+
+> For where two or three gather together in My name, there am I with them.” (Matthew 18:20)
+
+> Phrygia and Pamphylia, Egypt and the parts of Libya near Cyrene; visitors from Rome, (Acts 2:10)
+
+> Those who had been scattered preached the word wherever they went. (Acts 8:4)
+
+> <sup>19</sup>Meanwhile those scattered by the persecution that began with Stephen traveled as far as Phoenicia, Cyprus, and Antioch, speaking the message only to Jews. <sup>20</sup>But some of them, men from Cyprus and Cyrene, went to Antioch and began speaking to the Greeks as well, proclaiming the good news about the Lord Jesus. <sup>21</sup>The hand of the Lord was with them, and a great number of people believed and turned to the Lord. (Acts 11:19–21)
+
+### They were recognized and strengthened afterward: “When he arrived and saw the grace of God, he rejoiced” (Acts 11:23)
+
+> <sup>14</sup>When the apostles in Jerusalem heard that Samaria had received the word of God, they sent Peter and John to them. <sup>15</sup>On their arrival, they prayed for them to receive the Holy Spirit. <sup>16</sup>For the Holy Spirit had not yet fallen upon any of them; they had simply been baptized into the name of the Lord Jesus. <sup>17</sup>Then Peter and John laid their hands on them, and they received the Holy Spirit. (Acts 8:14–17)
+
+> <sup>22</sup>When news of this reached the ears of the church in Jerusalem, they sent Barnabas to Antioch. <sup>23</sup>When he arrived and saw the grace of God, he rejoiced and encouraged them all to abide in the Lord with all their hearts. (Acts 11:22–23)
+
+> And he began to speak boldly in the synagogue. When Priscilla and Aquila heard him, they took him in and explained to him the way of God more accurately. (Acts 18:26)
+
+> <sup>1</sup>While Apollos was at Corinth, Paul passed through the interior and came to Ephesus. There he found some disciples <sup>2</sup>and asked them, “Did you receive the Holy Spirit when you became believers?” “No,” they answered, “we have not even heard that there is a Holy Spirit.” <sup>3</sup>“Into what, then, were you baptized?” Paul asked. “The baptism of John,” they replied. <sup>4</sup>Paul explained: “John’s baptism was a baptism of repentance. He told the people to believe in the One coming after him, that is, in Jesus.” <sup>5</sup>On hearing this, they were baptized into the name of the Lord Jesus. <sup>6</sup>And when Paul laid his hands on them, the Holy Spirit came upon them, and they spoke in tongues and prophesied. (Acts 19:1–6)
+
+> For I want you to know how much I am struggling for you and for those at Laodicea, and for all who have not met me face to face, (Colossians 2:1)
+
+> For although I am absent from you in body, I am present with you in spirit, and I delight to see your orderly condition and firm faith in Christ. (Colossians 2:5)
 
 ## Raising up leaders
 

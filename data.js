@@ -415,3 +415,233 @@ const MATURITY = [
   ["to present her to Himself as a glorious church", "Ephesians 5:27",
     ["Ephesians 5:25–27", "Colossians 1:22", "1 Thessalonians 3:12–13", "1 Thessalonians 5:23", "Jude 24", "Revelation 19:7–8"]]
 ];
+
+// Sent, appointed, recognized: how churches came to be and were joined to the wider church.
+// [heading, phrase, where the phrase is from, references]
+const COMMISSION = [
+  ["Workers were sent", "Set apart for Me Barnabas and Saul", "Acts 13:2",
+    ["Acts 8:14", "Acts 11:22", "Acts 13:2–3", "Acts 15:22", "Acts 15:40", "Romans 10:15", "Colossians 1:7"]],
+  ["Leaders were appointed", "Paul and Barnabas appointed elders for them in each church", "Acts 14:23",
+    ["Acts 6:3", "Acts 6:6", "Acts 14:23", "1 Timothy 4:14", "Titus 1:5"]],
+  ["Some churches began with no one sent", "Those who had been scattered preached the word wherever they went", "Acts 8:4",
+    ["Matthew 18:20", "Acts 2:10", "Acts 8:4", "Acts 11:19–21"]],
+  ["They were recognized and strengthened afterward", "When he arrived and saw the grace of God, he rejoiced", "Acts 11:23",
+    ["Acts 8:14–17", "Acts 11:22–23", "Acts 18:26", "Acts 19:1–6", "Colossians 2:1", "Colossians 2:5"]]
+];
+
+// Timeline of each church. Years are approximate (AD), following a commonly used chronology;
+// Scripture gives the order and the lengths of stay, not the years. Gallio's term in Corinth
+// (Acts 18:12) is fixed by an inscription at AD 51–52, and the other years are counted from it.
+// Event types: begin, stay, left, leaders, visit, letter, sent, trial, later.
+// [year, type, what happened, reference, words quoted from that verse, end year (for a stay)]
+const TIMELINE = {
+  jerusalem: [
+    [30, "begin", "Pentecost: about three thousand baptized", "Acts 2:41", "about three thousand were added"],
+    [30, "stay", "The apostles stayed in Jerusalem", "Acts 8:1", "all except the apostles", 49],
+    [31, "leaders", "The Seven chosen to serve", "Acts 6:3", "select from among you seven men"],
+    [34, "trial", "Persecution scatters the church", "Acts 8:1", "a great persecution broke out against the church in Jerusalem"],
+    [37, "visit", "Paul's first visit, three years after his conversion", "Galatians 1:18", "Only after three years"],
+    [44, "trial", "Herod kills James and seizes Peter", "Acts 12:2", "put to death with the sword"],
+    [45, "leaders", "Elders receive the famine relief", "Acts 11:30", "sending their gifts to the elders"],
+    [49, "leaders", "Apostles and elders meet in council", "Acts 15:6", "the apostles and elders met"],
+    [57, "visit", "Paul with James and all the elders", "Acts 21:18", "all the elders were present"]
+  ],
+  samaria: [
+    [34, "begin", "Philip preaches; men and women baptized", "Acts 8:12", "they were baptized, both men and women"],
+    [34, "visit", "Peter and John sent from Jerusalem", "Acts 8:14", "they sent Peter and John to them"],
+    [34, "left", "Peter and John return to Jerusalem", "Acts 8:25", "they returned to Jerusalem"],
+    [36, "later", "The church at peace and growing", "Acts 9:31", "It grew in strength and numbers"]
+  ],
+  damascus: [
+    [34, "begin", "Disciples already in Damascus", "Acts 9:10", "In Damascus there was a disciple"],
+    [34, "stay", "Saul with the disciples", "Acts 9:19", "he spent several days with the disciples in Damascus"],
+    [34, "stay", "Arabia, then back to Damascus", "Galatians 1:17–18", "Only after three years", 37],
+    [37, "left", "Saul let down over the wall", "Acts 9:25", "lowered him in a basket"]
+  ],
+  lydda: [
+    [38, "visit", "Peter visits the saints in Lydda", "Acts 9:32", "he went to visit the saints in Lydda"],
+    [38, "begin", "Many believe in Joppa", "Acts 9:42", "many people believed in the Lord"],
+    [38, "stay", "Peter stays in Joppa", "Acts 9:43", "Peter stayed for several days in Joppa"]
+  ],
+  caesarea: [
+    [40, "begin", "The Spirit falls; Gentiles baptized", "Acts 10:48", "he ordered that they be baptized"],
+    [40, "stay", "Peter stays", "Acts 10:48", "stay for a few days"],
+    [57, "later", "Paul stays with Philip the evangelist", "Acts 21:8", "stayed at the home of Philip the evangelist"]
+  ],
+  antioch: [
+    [40, "begin", "Believers from Cyprus and Cyrene preach to Greeks", "Acts 11:21", "a great number of people believed"],
+    [42, "visit", "Barnabas sent from Jerusalem", "Acts 11:22", "they sent Barnabas to Antioch"],
+    [43, "stay", "Barnabas and Saul teach the church", "Acts 11:26", "for a full year", 44],
+    [45, "sent", "Relief sent to Judea", "Acts 11:29", "decided to send relief"],
+    [46, "leaders", "Prophets and teachers lead the church", "Acts 13:1", "there were prophets and teachers"],
+    [47, "sent", "Barnabas and Saul sent out", "Acts 13:3", "sent them off"],
+    [48, "stay", "Paul and Barnabas return", "Acts 14:28", "they spent a long time there", 49],
+    [49, "visit", "The council's letter delivered", "Acts 15:30", "delivered the letter"],
+    [50, "sent", "Paul and Silas sent out", "Acts 15:40", "commended by the brothers"],
+    [52, "stay", "Paul returns", "Acts 18:23", "spent some time in Antioch"]
+  ],
+  "pisidian-antioch": [
+    [47, "begin", "Gentiles believe", "Acts 13:48", "all who were appointed for eternal life believed"],
+    [47, "stay", "Two Sabbaths", "Acts 13:44", "On the following Sabbath"],
+    [47, "left", "Driven out", "Acts 13:50", "drove them out of their district"],
+    [48, "leaders", "Elders appointed on the return trip", "Acts 14:23", "appointed elders for them in each church"],
+    [50, "visit", "Paul and Silas pass through", "Acts 16:6", "the region of Phrygia and Galatia"],
+    [53, "visit", "Paul strengthens the disciples", "Acts 18:23", "strengthening all the disciples"]
+  ],
+  iconium: [
+    [47, "begin", "Jews and Greeks believe", "Acts 14:1", "a great number of Jews and Greeks believed"],
+    [47, "stay", "A long stay", "Acts 14:3", "spent considerable time there"],
+    [47, "left", "Fled from a plot to stone them", "Acts 14:6", "fled to the Lycaonian cities"],
+    [48, "leaders", "Elders appointed on the return trip", "Acts 14:23", "appointed elders for them in each church"],
+    [50, "visit", "The brothers commend Timothy", "Acts 16:2", "spoke well of him"],
+    [53, "visit", "Paul strengthens the disciples", "Acts 18:23", "strengthening all the disciples"]
+  ],
+  lystra: [
+    [47, "begin", "The gospel preached", "Acts 14:7", "they continued to preach the gospel"],
+    [47, "trial", "Paul stoned", "Acts 14:19", "They stoned Paul"],
+    [47, "left", "Paul leaves the next day", "Acts 14:20", "the next day he left with Barnabas"],
+    [48, "leaders", "Elders appointed on the return trip", "Acts 14:23", "appointed elders for them in each church"],
+    [50, "sent", "Timothy joins Paul", "Acts 16:3", "Paul wanted Timothy to accompany him"],
+    [53, "visit", "Paul strengthens the disciples", "Acts 18:23", "strengthening all the disciples"]
+  ],
+  derbe: [
+    [47, "begin", "Many disciples made", "Acts 14:21", "made many disciples"],
+    [50, "visit", "Paul returns", "Acts 16:1", "Paul came to Derbe"],
+    [57, "sent", "Gaius travels with Paul", "Acts 20:4", "Gaius from Derbe"]
+  ],
+  galatia: [
+    [47, "begin", "Paul first preaches, because of an illness", "Galatians 4:13", "I first preached the gospel to you"],
+    [48, "leaders", "Elders appointed on the return trip", "Acts 14:23", "appointed elders for them in each church"],
+    [49, "letter", "Letter to the Galatians (some date it c. AD 55)", "Galatians 1:6", "how quickly you are deserting"],
+    [53, "visit", "Paul strengthens the disciples", "Acts 18:23", "strengthening all the disciples"],
+    [55, "sent", "Collection for Jerusalem", "1 Corinthians 16:1", "as I directed the churches of Galatia"]
+  ],
+  philippi: [
+    [49, "begin", "Lydia and her household baptized", "Acts 16:15", "she and her household had been baptized"],
+    [49, "stay", "Several days", "Acts 16:12", "we stayed there several days"],
+    [49, "trial", "Paul and Silas beaten and jailed", "Acts 16:23", "they threw them into prison"],
+    [49, "left", "They leave the city", "Acts 16:40", "Then they left the city"],
+    [50, "sent", "Gifts sent to Paul in Thessalonica", "Philippians 4:16", "Thessalonica"],
+    [56, "visit", "Paul passes through Macedonia", "Acts 20:2", "speaking many words of encouragement"],
+    [57, "visit", "Paul sails from Philippi", "Acts 20:6", "we sailed from Philippi"],
+    [61, "leaders", "Letter to the overseers and deacons", "Philippians 1:1", "together with the overseers and deacons"]
+  ],
+  thessalonica: [
+    [50, "begin", "Jews and God-fearing Greeks persuaded", "Acts 17:4", "Some of the Jews were persuaded"],
+    [50, "stay", "Three Sabbaths", "Acts 17:2", "on three Sabbaths"],
+    [50, "left", "Sent away by night", "Acts 17:10", "the brothers sent Paul and Silas away"],
+    [50, "visit", "Timothy sent back", "1 Thessalonians 3:2", "We sent Timothy"],
+    [51, "leaders", "First letter names their leaders", "1 Thessalonians 5:12", "who preside over you in the Lord"],
+    [51, "letter", "Second letter", "2 Thessalonians 1:3", "your faith is growing more and more"],
+    [57, "sent", "Aristarchus and Secundus travel with Paul", "Acts 20:4", "Aristarchus and Secundus from Thessalonica"]
+  ],
+  berea: [
+    [50, "begin", "Many believe", "Acts 17:12", "many of them believed"],
+    [50, "left", "Paul sent to the coast", "Acts 17:14", "sent Paul to the coast"],
+    [50, "stay", "Silas and Timothy stay on", "Acts 17:14", "Silas and Timothy remained in Berea"],
+    [57, "sent", "Sopater travels with Paul", "Acts 20:4", "Sopater son of Pyrrhus from Berea"]
+  ],
+  athens: [
+    [50, "begin", "Some believe", "Acts 17:34", "some joined him and believed"],
+    [50, "left", "Paul leaves for Corinth", "Acts 18:1", "Paul left Athens"]
+  ],
+  corinth: [
+    [50, "begin", "Many believe and are baptized", "Acts 18:8", "believed and were baptized"],
+    [50, "stay", "A year and a half", "Acts 18:11", "a year and a half", 52],
+    [51, "trial", "Brought before Gallio", "Acts 18:12", "brought him before the judgment seat"],
+    [52, "left", "Paul says goodbye", "Acts 18:18", "saying goodbye to the brothers"],
+    [52, "visit", "Apollos comes", "Acts 18:27", "he was a great help"],
+    [55, "leaders", "First letter: submit to Stephanas's household", "1 Corinthians 16:15–16", "submit to such as these"],
+    [55, "visit", "Timothy sent", "1 Corinthians 4:17", "I have sent you Timothy"],
+    [56, "letter", "Second letter, after Titus's report", "2 Corinthians 7:6", "by the arrival of Titus"],
+    [57, "stay", "Three months in Greece", "Acts 20:3", "he stayed three months"]
+  ],
+  ephesus: [
+    [52, "begin", "Paul reasons in the synagogue", "Acts 18:19", "reasoned with the Jews"],
+    [52, "left", "Paul leaves, promising to return", "Acts 18:21", "I will come back to you if God is willing"],
+    [52, "visit", "Priscilla and Aquila teach Apollos", "Acts 18:26", "explained to him the way of God more accurately"],
+    [53, "visit", "Paul returns; twelve disciples baptized", "Acts 19:5", "baptized into the name of the Lord Jesus"],
+    [53, "stay", "Three months in the synagogue", "Acts 19:8", "for three months"],
+    [53, "stay", "Two years in the hall of Tyrannus", "Acts 19:10", "This continued for two years", 55],
+    [55, "left", "Paul leaves for Macedonia", "Acts 20:1", "left for Macedonia"],
+    [57, "leaders", "Paul meets the elders at Miletus", "Acts 20:17", "the elders of the church"],
+    [57, "left", "His last farewell to them", "Acts 20:25", "will see my face again"],
+    [61, "letter", "Letter to the Ephesians", "Ephesians 1:15", "ever since I heard about your faith"],
+    [63, "visit", "Timothy left in Ephesus", "1 Timothy 1:3", "stay on at Ephesus"],
+    [95, "later", "The Lord's word to Ephesus", "Revelation 2:4", "You have abandoned your first love"]
+  ],
+  troas: [
+    [55, "begin", "A door opened for the gospel", "2 Corinthians 2:12", "a door stood open for me"],
+    [57, "stay", "Seven days", "Acts 20:6", "where we stayed seven days"],
+    [57, "left", "Paul leaves at daybreak", "Acts 20:11", "after speaking until daybreak, he departed"]
+  ],
+  colossae: [
+    [54, "begin", "Epaphras brings the gospel (likely during Paul's years in Ephesus)", "Colossians 1:7", "You learned it from Epaphras"],
+    [60, "letter", "Letter to the Colossians", "Colossians 2:5", "your orderly condition and firm faith"],
+    [60, "visit", "Tychicus sent", "Colossians 4:8", "I have sent him to you"],
+    [60, "leaders", "Archippus charged with his ministry", "Colossians 4:17", "complete the ministry you have received"]
+  ],
+  laodicea: [
+    [54, "begin", "Epaphras labors for them", "Colossians 4:13", "for those at Laodicea and Hierapolis"],
+    [60, "letter", "Letters exchanged with Colossae", "Colossians 4:16", "read in the church of the Laodiceans"],
+    [95, "later", "The Lord's word to Laodicea", "Revelation 3:15", "you are neither cold nor hot"]
+  ],
+  rome: [
+    [30, "begin", "Visitors from Rome at Pentecost", "Acts 2:10", "visitors from Rome"],
+    [57, "letter", "Letter to the Romans", "Romans 1:8", "your faith is being proclaimed all over the world"],
+    [60, "visit", "The brothers meet Paul on the road", "Acts 28:15", "traveled as far as the Forum of Appius"],
+    [60, "stay", "Two years in his rented house", "Acts 28:30", "two full years", 62]
+  ],
+  crete: [
+    [30, "begin", "Cretans at Pentecost", "Acts 2:11", "Cretans"],
+    [63, "stay", "Titus left in Crete", "Titus 1:5", "The reason I left you in Crete"],
+    [63, "leaders", "Elders to be appointed in every town", "Titus 1:5", "appoint elders in every town"]
+  ],
+  coast: [
+    [57, "stay", "Seven days with the disciples in Tyre", "Acts 21:4", "stayed with them seven days"],
+    [57, "stay", "A day in Ptolemais", "Acts 21:7", "stayed with them for a day"],
+    [59, "visit", "Friends in Sidon care for Paul", "Acts 27:3", "visit his friends"],
+    [60, "stay", "A week in Puteoli", "Acts 28:14", "spend the week with them"]
+  ],
+  dispersion: [
+    [63, "leaders", "Peter writes to their elders", "1 Peter 5:1", "I appeal to the elders among you"]
+  ],
+  hebrews: [
+    [65, "leaders", "Remember and obey your leaders", "Hebrews 13:7", "Remember your leaders"],
+    [65, "later", "Looking back to their early days", "Hebrews 10:32", "Remember the early days"]
+  ],
+  james: [
+    [48, "leaders", "Call the elders of the church", "James 5:14", "call the elders of the church"]
+  ],
+  john: [
+    [90, "letter", "Second letter", "2 John 4", "walking in the truth"],
+    [90, "letter", "Third letter: Diotrephes", "3 John 9", "Diotrephes, who loves to be first"]
+  ],
+  smyrna: [
+    [54, "begin", "All Asia hears the word (likely when it began)", "Acts 19:10", "everyone who lived in the province of Asia"],
+    [95, "later", "The Lord's word to Smyrna", "Revelation 2:10", "Be faithful even unto death"]
+  ],
+  pergamum: [
+    [54, "begin", "All Asia hears the word (likely when it began)", "Acts 19:10", "everyone who lived in the province of Asia"],
+    [95, "later", "The Lord's word to Pergamum", "Revelation 2:13", "you have held fast to My name"]
+  ],
+  thyatira: [
+    [49, "visit", "Lydia of Thyatira believes, in Philippi", "Acts 16:14", "from the city of Thyatira"],
+    [54, "begin", "All Asia hears the word (likely when it began)", "Acts 19:10", "everyone who lived in the province of Asia"],
+    [95, "later", "The Lord's word to Thyatira", "Revelation 2:19", "your latter deeds are greater than your first"]
+  ],
+  sardis: [
+    [54, "begin", "All Asia hears the word (likely when it began)", "Acts 19:10", "everyone who lived in the province of Asia"],
+    [95, "later", "The Lord's word to Sardis", "Revelation 3:1", "you have a reputation for being alive"]
+  ],
+  philadelphia: [
+    [54, "begin", "All Asia hears the word (likely when it began)", "Acts 19:10", "everyone who lived in the province of Asia"],
+    [95, "later", "The Lord's word to Philadelphia", "Revelation 3:8", "you have kept My word"]
+  ]
+};
+
+// Names for the event types, in the order of the legend.
+const EVENT_TYPES = [
+  ["begin", "Began"], ["stay", "Stayed"], ["left", "Left"], ["leaders", "Leaders"], ["visit", "Visited or strengthened"],
+  ["letter", "Letter"], ["sent", "Sent out or gave"], ["trial", "Suffering"], ["later", "Later word"]
+];
