@@ -36,6 +36,7 @@ const LISTS = [["mark", MARKS], ["stage", PLANTING], ["lead", LEADERS], ["mature
 LISTS.forEach(([k, rows]) => rows.forEach((row, i) => row[2].forEach(r => use(r, `“${row[0]}”`, `#${k}-${i}`))));
 HANDOFFS.forEach(([who, refs]) => refs.forEach(r => use(r, who, "#handoffs")));
 COMMISSION.forEach(([head, , , refs]) => refs.forEach(r => use(r, head, "#commission")));
+CORE.forEach(([name, , , , refs], i) => refs.forEach(r => use(r, name, `#core-${i}`)));
 Object.entries(TIMELINE).forEach(([id, evs]) => evs.forEach(e => use(e[3], CH.get(id)[1], `#church-${id}`)));
 
 /* One passage: the text with verse numbers, and its reference. */
@@ -86,6 +87,7 @@ function phraseScreen(key, rows, n, o) {
   const [phrase, pref, refs] = it, all = canon(refs), shown = all.filter(r => inScope(r));
   const hasOT = o.scope && all.some(r => !isNT(r));
   return { title: o.title, tab: o.tab, back: o.back, html: `
+    ${coreOf(`${key}-${n}`) >= 0 ? `<a class="corechip" href="#core-${coreOf(`${key}-${n}`)}">Core element ${coreOf(`${key}-${n}`) + 1}: ${CORE[coreOf(`${key}-${n}`)][0]} ›</a>` : ""}
     <div class="hello"><p class="label">${o.label} ${n + 1} of ${rows.length}</p>
       <p class="phrase">“${esc(phrase)}”</p><span class="ref">${pref}</span></div>
     ${o.scope ? strip(all, true) : ""}
@@ -106,6 +108,12 @@ function homeScreen() {
       <p class="verse big">${esc(text("Matthew 16:18"))}</p>
       <span class="ref">Matthew 16:18</span>
     </div>
+
+    <p class="label" style="margin-top:22px">Six core elements</p>
+    <p class="muted" style="margin:-4px 0 10px;font-size:14px">The patterns seen through all of Scripture's churches. Tap one for its verses.</p>
+    ${coreTiles()}
+    ${row("#core", "How they fit together", "What was there at the start, what came as churches grew, and maturity")}
+
     <div class="card" style="margin-top:16px">
       <p class="label">The first church</p>
       ${passage("Acts 2:42–47").replace('<article class="pass">', "<div>").replace("</article>", "</div>")}
@@ -173,6 +181,54 @@ function churchScreen(id) {
     </div>` };
 }
 
+
+
+/* ---------- The six core elements ---------- */
+const PAGE_NAMES = { leaders: ["Raising up leaders", "Leaders"], handoffs: ["Handing on the work", "Leaders"],
+  commission: ["Sent, appointed, recognized", "Planting"], timeline: ["Timeline of every church", "Planting"] };
+function pageLink(pg) {
+  const [k, n] = pg.split("-");
+  if (k === "mark") return [`“${esc(MARKS[+n][0])}”`, `Mark · ${MARKS[+n][1]}`];
+  if (k === "stage") return [`“${esc(PLANTING[+n][0])}”`, `Planting stage ${+n + 1} · ${PLANTING[+n][1]}`];
+  return PAGE_NAMES[pg];
+}
+const gridStat = k => START.filter(s => s[1][k]).length;
+function coreTiles() {
+  return `<div class="core">${CORE.map((c, i) => `<a class="coretile" href="#core-${i}"><span class="n">${i + 1}</span>
+    <b>${c[0]}</b><small>“${esc(c[1])}”<br>${c[2]}</small></a>`).join("")}</div>`;
+}
+function coresScreen() {
+  return { title: "Six core elements", tab: "home", back: "#home", html: `
+    <p class="lead">The patterns that run through every list in this app: the churches, the marks, the planting stages, the leaders and maturity. This summary is a way of seeing those patterns, not a list Scripture itself gives; each element opens its verses.</p>
+    ${coreTiles()}
+    <p class="label" style="margin-top:22px">When each element appears</p>
+    ${CORE_PHASES.map(([when, what, idx]) => `<div class="card phase"><p class="label">${when}</p><p>${what}.</p>
+      <div class="chips">${idx.map(i => `<a class="chip" href="#core-${i}">${i + 1}. ${CORE[i][0]}</a>`).join("")}</div></div>`).join("")}
+    <p class="fine">“At the start” is what the start grid shows for most new churches; “As it grows” is what came on return visits and in letters (Titus 1:5: “set in order what was unfinished”); “When mature” is a church “able to instruct one another” (Romans 15:14), led by its own elders and sending others out.</p>` };
+}
+function coreScreen(n) {
+  const c = CORE[n]; if (!c) return coresScreen();
+  const [name, phrase, pref, sum, refs, pages, els] = c, all = canon(refs);
+  return { title: name, tab: "home", back: "#core", html: `
+    <div class="hero church"><p class="n">Core element ${n + 1} of ${CORE.length}</p><h2>${name}</h2>
+      <p class="verse">“${esc(phrase)}”</p><span class="ref">${pref}</span></div>
+    <p class="lead">${esc(sum)}</p>
+    ${els.length ? `<div class="card">${els.map(k => { const e = ELEMENTS.find(x => x[0] === k), v = gridStat(k);
+      return `<div class="meter"><span>${e[1]}</span><div class="bar"><i style="width:${Math.round(v / START.length * 100)}%"></i></div><small>${v} of ${START.length}</small></div>`; }).join("")}
+      <p class="fine" style="margin:6px 0 0">New churches where Scripture states it, from <a href="#start">What was there at the start</a>.</p></div>` : ""}
+    <div class="kind">Key verses <small>${all.length}</small></div>
+    ${strip(all, true)}
+    <div class="thread">${grouped(all, { tags: true, here: `#core-${n}` })}</div>
+    <div class="kind">Seen throughout the app <small>${pages.length}</small></div>
+    ${pages.map(pg => { const [t, sub] = pageLink(pg); return `<a class="rowbtn" href="#${pg}"><span class="dot" style="--c:var(--accent)"></span>
+      <span class="txt"><b>${t}</b><small>${sub}</small></span>${chev}</a>`; }).join("")}
+    <div class="pager">
+      ${n > 0 ? `<a href="#core-${n - 1}">← ${CORE[n - 1][0]}</a>` : ""}
+      ${n < CORE.length - 1 ? `<a class="next" href="#core-${n + 1}">${CORE[n + 1][0]} →</a>` : ""}
+    </div>` };
+}
+/* The core element a mark or stage belongs to, shown on its page. */
+const coreOf = pg => CORE.findIndex(c => c[5].includes(pg));
 
 /* ---------- Timelines ---------- */
 const Y0 = 30, Y1 = 96;
@@ -366,6 +422,7 @@ function route() {
     : name === "stay" ? stayScreen()
     : name === "timeline" ? timelineScreen()
     : name === "commission" ? commissionScreen()
+    : name === "core" ? (arg === "" ? coresScreen() : coreScreen(+arg))
     : name === "leaders" ? leadersScreen()
     : name === "lead" ? leadScreen(+arg)
     : name === "handoffs" ? handoffsScreen()

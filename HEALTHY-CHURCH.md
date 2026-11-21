@@ -6,6 +6,7 @@ Scripture quotations are from the Berean Standard Bible (BSB), dedicated to the 
 
 ## Contents
 
+0. [Six core elements](#six-core-elements)
 1. [The churches](#the-churches)
 2. [Marks of a healthy church](#marks-of-a-healthy-church)
 3. [How churches began](#how-churches-began)
@@ -15,6 +16,134 @@ Scripture quotations are from the Berean Standard Bible (BSB), dedicated to the 
 6. [Handing on the work](#handing-on-the-work)
 7. [A mature church](#a-mature-church)
 8. [The church from Genesis to Revelation](#the-church-from-genesis-to-revelation)
+
+## Six core elements
+
+The patterns that run through every list in this study. This summary is a way of seeing those patterns, not a list Scripture itself gives.
+
+### 1. The word: “They devoted themselves to the apostles’ teaching” (Acts 2:42)
+
+Every church began with the word preached, and kept being taught and strengthened by it.
+
+> Assemble the people—men, women, children, and the foreigners within your gates—so that they may listen and learn to fear the LORD your God and to follow carefully all the words of this law. (Deuteronomy 31:12)
+
+> So they read from the Book of the Law of God, explaining it and giving insight, so that the people could understand what was being read. (Nehemiah 8:8)
+
+> They devoted themselves to the apostles’ teaching and to the fellowship, to the breaking of bread and to prayer. (Acts 2:42)
+
+> <sup>21</sup>They preached the gospel to that city and made many disciples. Then they returned to Lystra, Iconium, and Antioch, <sup>22</sup>strengthening the souls of the disciples and encouraging them to continue in the faith. “We must endure many hardships to enter the kingdom of God,” they said. (Acts 14:21–22)
+
+> So Paul stayed for a year and a half, teaching the word of God among the Corinthians. (Acts 18:11)
+
+> I did not shrink back from declaring anything that was helpful to you as I taught you publicly and from house to house, (Acts 20:20)
+
+> Let the word of Christ richly dwell within you as you teach and admonish one another with all wisdom, and as you sing psalms, hymns, and spiritual songs with gratitude in your hearts to God. (Colossians 3:16)
+
+> Preach the word; be prepared in season and out of season; reprove, rebuke, and encourage with every form of patient instruction. (2 Timothy 4:2)
+
+### 2. Faith and baptism: “many of the Corinthians who heard the message believed and were baptized” (Acts 18:8)
+
+People turned to God, believed, and were baptized into the body.
+
+> Abram believed the LORD, and it was credited to him as righteousness. (Genesis 15:6)
+
+> Peter replied, “Repent and be baptized, every one of you, in the name of Jesus Christ for the forgiveness of your sins, and you will receive the gift of the Holy Spirit. (Acts 2:38)
+
+> Those who embraced his message were baptized, and about three thousand were added to the believers that day. (Acts 2:41)
+
+> But when they believed Philip as he preached the gospel of the kingdom of God and the name of Jesus Christ, they were baptized, both men and women. (Acts 8:12)
+
+> <sup>33</sup>At that hour of the night, the jailer took them and washed their wounds. And without delay, he and all his household were baptized. <sup>34</sup>Then he brought them into his home and set a meal before them. So he and all his household rejoiced that they had come to believe in God. (Acts 16:33–34)
+
+> Crispus, the synagogue leader, and his whole household believed in the Lord. And many of the Corinthians who heard the message believed and were baptized. (Acts 18:8)
+
+> <sup>3</sup>Or aren’t you aware that all of us who were baptized into Christ Jesus were baptized into His death? <sup>4</sup>We were therefore buried with Him through baptism into death, in order that, just as Christ was raised from the dead through the glory of the Father, we too may walk in newness of life. (Romans 6:3–4)
+
+> For they themselves report what kind of welcome you gave us, and how you turned to God from idols to serve the living and true God (1 Thessalonians 1:9)
+
+### 3. Gathered as a family: “All the believers were together and had everything in common” (Acts 2:44)
+
+They met together, often in homes, for fellowship, the breaking of bread, prayer and praise, and loved one another in deed.
+
+> A song of ascents. Of David. Behold, how good and pleasant it is when brothers live together in harmony! (Psalm 133:1)
+
+> <sup>44</sup>All the believers were together and had everything in common. <sup>45</sup>Selling their possessions and goods, they shared with anyone who was in need. <sup>46</sup>With one accord they continued to meet daily in the temple courts and to break bread from house to house, sharing their meals with gladness and sincerity of heart, (Acts 2:44–46)
+
+> On the first day of the week we came together to break bread. Since Paul was ready to leave the next day, he talked to them and kept on speaking until midnight. (Acts 20:7)
+
+> Share with the saints who are in need. Practice hospitality. (Romans 12:13)
+
+> Greet also the church that meets at their house. Greet my beloved Epenetus, who was the first convert to Christ in the province of Asia. (Romans 16:5)
+
+> <sup>24</sup>And let us consider how to spur one another on to love and good deeds. <sup>25</sup>Let us not neglect meeting together, as some have made a habit, but let us encourage one another, and all the more as you see the Day approaching. (Hebrews 10:24–25)
+
+> But if we walk in the light as He is in the light, we have fellowship with one another, and the blood of Jesus His Son cleanses us from all sin. (1 John 1:7)
+
+### 4. Shepherds from within: “Paul and Barnabas appointed elders for them in each church” (Acts 14:23)
+
+Leaders were raised from among the believers, tested, appointed, and entrusted to train others.
+
+> Furthermore, select capable men from among the people—God-fearing, trustworthy men who are averse to dishonest gain. Appoint them over the people as leaders of thousands, of hundreds, of fifties, and of tens. (Exodus 18:21)
+
+> Then I will give you shepherds after My own heart, who will feed you with knowledge and understanding.” (Jeremiah 3:15)
+
+> Paul and Barnabas appointed elders for them in each church, praying and fasting as they entrusted them to the Lord, in whom they had believed. (Acts 14:23)
+
+> Keep watch over yourselves and the entire flock of which the Holy Spirit has made you overseers. Be shepherds of the church of God, which He purchased with His own blood. (Acts 20:28)
+
+> An overseer, then, must be above reproach, the husband of but one wife, temperate, self-controlled, respectable, hospitable, able to teach, (1 Timothy 3:2)
+
+> And the things that you have heard me say among many witnesses, entrust these to faithful men who will be qualified to teach others as well. (2 Timothy 2:2)
+
+> The reason I left you in Crete was that you would set in order what was unfinished and appoint elders in every town, as I directed you. (Titus 1:5)
+
+> <sup>2</sup>Be shepherds of God’s flock that is among you, watching over them not out of compulsion, but because it is God’s will; not out of greed, but out of eagerness; <sup>3</sup>not lording it over those entrusted to you, but being examples to the flock. (1 Peter 5:2–3)
+
+### 5. Connected and sent: “your partnership in the gospel” (Philippians 1:5)
+
+No church stood alone: they were visited, written to and helped, and they sent workers out in turn.
+
+> Then I heard the voice of the Lord saying: “Whom shall I send? Who will go for Us?” And I said: “Here am I. Send me!” (Isaiah 6:8)
+
+> <sup>2</sup>While they were worshiping the Lord and fasting, the Holy Spirit said, “Set apart for Me Barnabas and Saul for the work to which I have called them.” <sup>3</sup>And after they had fasted and prayed, they laid their hands on them and sent them off. (Acts 13:2–3)
+
+> Some time later Paul said to Barnabas, “Let us go back and visit the brothers in every town where we proclaimed the word of the Lord, to see how they are doing.” (Acts 15:36)
+
+> For Macedonia and Achaia were pleased to make a contribution for the poor among the saints in Jerusalem. (Romans 15:26)
+
+> because of your partnership in the gospel from the first day until now, (Philippians 1:5)
+
+> After this letter has been read among you, make sure that it is also read in the church of the Laodiceans, and that you in turn read the letter from Laodicea. (Colossians 4:16)
+
+> For not only did the message of the Lord ring out from you to Macedonia and Achaia, but your faith in God has gone out to every place, so that we have no need to say anything more. (1 Thessalonians 1:8)
+
+> Therefore we ought to support such men, so that we may be fellow workers for the truth. (3 John 8)
+
+### 6. The Spirit and endurance: “the disciples were filled with joy and with the Holy Spirit” (Acts 13:52)
+
+The Holy Spirit gave life, power and holiness, and the churches held on through hardship.
+
+> <sup>28</sup>And afterward, I will pour out My Spirit on all people. Your sons and daughters will prophesy, your old men will dream dreams, your young men will see visions. <sup>29</sup>Even on My menservants and maidservants, I will pour out My Spirit in those days. (Joel 2:28–29)
+
+> So he said to me, “This is the word of the LORD to Zerubbabel: Not by might nor by power, but by My Spirit, says the LORD of Hosts. (Zechariah 4:6)
+
+> And they were all filled with the Holy Spirit and began to speak in other tongues as the Spirit enabled them. (Acts 2:4)
+
+> After they had prayed, their meeting place was shaken, and they were all filled with the Holy Spirit and spoke the word of God boldly. (Acts 4:31)
+
+> And the disciples were filled with joy and with the Holy Spirit. (Acts 13:52)
+
+> strengthening the souls of the disciples and encouraging them to continue in the faith. “We must endure many hardships to enter the kingdom of God,” they said. (Acts 14:22)
+
+> And you became imitators of us and of the Lord when you welcomed the message with the joy of the Holy Spirit, in spite of your great suffering. (1 Thessalonians 1:6)
+
+> If you are insulted for the name of Christ, you are blessed, because the Spirit of glory and of God rests on you. (1 Peter 4:14)
+
+### When each element appears
+
+- **At the start:** the word preached, people believing, gathered with the Spirit among them (The word, Faith and baptism, Gathered as a family, The Spirit and endurance).
+- **As it grows:** leaders appointed from within, follow-up visits and letters, partnership with other churches (Shepherds from within, Connected and sent).
+- **When mature:** all six carried by the church itself (The word, Faith and baptism, Gathered as a family, Shepherds from within, Connected and sent, The Spirit and endurance).
 
 ## The churches
 

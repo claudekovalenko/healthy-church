@@ -8,7 +8,7 @@ const ctx = {};
 vm.createContext(ctx);
 vm.runInContext(fs.readFileSync(path.join(root, "passages.js"), "utf8") + "\n" +
   fs.readFileSync(path.join(root, "data.js"), "utf8") +
-  "\nthis.D={COMMISSION,TIMELINE,EVENT_TYPES,PASSAGES,KINDS,CHURCHES,GROUPS,ELEMENTS,START,PLANTING,MARKS,STORY,LEADERS,HANDOFFS,MATURITY};", ctx);
+  "\nthis.D={CORE,CORE_PHASES,COMMISSION,TIMELINE,EVENT_TYPES,PASSAGES,KINDS,CHURCHES,GROUPS,ELEMENTS,START,PLANTING,MARKS,STORY,LEADERS,HANDOFFS,MATURITY};", ctx);
 const D = ctx.D;
 const KEYS = Object.keys(D.PASSAGES), ORDER = new Map(KEYS.map((k, i) => [k, i]));
 const canon = refs => [...new Set(refs)].sort((a, b) => ORDER.get(a) - ORDER.get(b));
@@ -23,7 +23,18 @@ const out = [];
 const h = (level, title) => out.push(`${"#".repeat(level)} ${title}\n`);
 
 out.push(`# Healthy Church\n\nWhat Scripture shows a church to be: every church in the New Testament, how churches began, how leaders were raised up and the work handed on, what maturity is, and the marks of a healthy church traced from Genesis to Revelation.\n\nScripture quotations are from the Berean Standard Bible (BSB), dedicated to the public domain. A verse is listed only when its own words plainly show the point.\n`);
-out.push(`## Contents\n\n1. [The churches](#the-churches)\n2. [Marks of a healthy church](#marks-of-a-healthy-church)\n3. [How churches began](#how-churches-began)\n4. [What was there at the start](#what-was-there-at-the-start)\n4b. [Timeline of every church](#timeline-of-every-church) · [Sent, appointed, recognized](#sent-appointed-recognized)\n5. [Raising up leaders](#raising-up-leaders)\n6. [Handing on the work](#handing-on-the-work)\n7. [A mature church](#a-mature-church)\n8. [The church from Genesis to Revelation](#the-church-from-genesis-to-revelation)\n`);
+out.push(`## Contents\n\n0. [Six core elements](#six-core-elements)\n1. [The churches](#the-churches)\n2. [Marks of a healthy church](#marks-of-a-healthy-church)\n3. [How churches began](#how-churches-began)\n4. [What was there at the start](#what-was-there-at-the-start)\n4b. [Timeline of every church](#timeline-of-every-church) · [Sent, appointed, recognized](#sent-appointed-recognized)\n5. [Raising up leaders](#raising-up-leaders)\n6. [Handing on the work](#handing-on-the-work)\n7. [A mature church](#a-mature-church)\n8. [The church from Genesis to Revelation](#the-church-from-genesis-to-revelation)\n`);
+
+h(2, "Six core elements");
+out.push("The patterns that run through every list in this study. This summary is a way of seeing those patterns, not a list Scripture itself gives.\n");
+D.CORE.forEach(([name, phrase, pref, sum, refs], i) => {
+  h(3, `${i + 1}. ${name}: “${phrase}” (${pref})`);
+  out.push(sum + "\n");
+  canon(refs).forEach(r => out.push(verse(r)));
+});
+h(3, "When each element appears");
+D.CORE_PHASES.forEach(([when, what, idx]) => out.push(`- **${when}:** ${what} (${idx.map(i => D.CORE[i][0]).join(", ")}).`));
+out.push("");
 
 h(2, "The churches");
 const seen = new Set();

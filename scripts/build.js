@@ -11,7 +11,7 @@ const root = path.join(__dirname, "..");
 const ctx = {};
 vm.createContext(ctx);
 vm.runInContext(fs.readFileSync(path.join(root, "data.js"), "utf8") +
-  "\nthis.D={COMMISSION,TIMELINE,EVENT_TYPES,KINDS,CHURCHES,GROUPS,ELEMENTS,START,PLANTING,MARKS,STORY,LEADERS,HANDOFFS,MATURITY};", ctx);
+  "\nthis.D={CORE,CORE_PHASES,COMMISSION,TIMELINE,EVENT_TYPES,KINDS,CHURCHES,GROUPS,ELEMENTS,START,PLANTING,MARKS,STORY,LEADERS,HANDOFFS,MATURITY};", ctx);
 const D = ctx.D;
 
 const errors = [];
@@ -79,6 +79,17 @@ Object.entries(D.TIMELINE).forEach(([id, evs]) => {
   });
 });
 D.CHURCHES.forEach(c => D.TIMELINE[c[0]] || errors.push(`No timeline for ${c[0]}`));
+D.CORE.forEach(([name, phrase, pref, sum, refs, pages, els]) => {
+  phrased("CORE", [[phrase, pref, refs]]);
+  els.forEach(k => D.ELEMENTS.some(e => e[0] === k) || errors.push(`CORE ${name}: unknown element ${k}`));
+  pages.forEach(pg => { const [k, n] = pg.split("-");
+    const rows = { mark: D.MARKS, stage: D.PLANTING }[k];
+    if (rows ? !rows[+n] : !["leaders", "handoffs", "commission", "timeline"].includes(pg)) errors.push(`CORE ${name}: unknown page ${pg}`); });
+});
+// Every mark and planting stage should belong to some core element.
+D.MARKS.forEach((m, i) => D.CORE.some(c => c[5].includes(`mark-${i}`)) || errors.push(`Mark ${i} "${m[0]}" is in no core element`));
+D.PLANTING.forEach((m, i) => D.CORE.some(c => c[5].includes(`stage-${i}`)) || errors.push(`Stage ${i} "${m[0]}" is in no core element`));
+
 
 
 if (errors.length) { console.error([...new Set(errors)].join("\n")); process.exit(1); }

@@ -338,3 +338,18 @@ table.sumtab thead th{font-size:11px;letter-spacing:.06em;text-transform:upperca
 table.sumtab tbody th a{color:var(--ink);text-decoration:none}
 table.sumtab small{color:var(--muted)}
 table.sumtab td.nw{white-space:nowrap}
+
+/* Six core elements */
+.core{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (min-width:640px){.core{grid-template-columns:repeat(3,1fr)}}
+.coretile{position:relative;display:block;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);
+  border-radius:14px;padding:12px;overflow:hidden}
+.coretile::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:var(--accent)}
+.coretile:active{background:var(--accent-soft)}
+.coretile .n{display:grid;place-items:center;width:26px;height:26px;border-radius:999px;background:var(--accent);color:var(--on-c);font-weight:800;font-size:13px;margin:4px 0 6px}
+.coretile b{display:block;font-size:16px;line-height:1.2}
+.coretile small{display:block;margin-top:4px;color:var(--muted);font-size:12px;line-height:1.35;font-family:Georgia,"Iowan Old Style",serif}
+.corechip{display:inline-block;text-decoration:none;font-size:12px;font-weight:700;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:3px 10px;margin:0 0 10px}
+.phase p{margin:0 0 8px}
+.phase .chips{flex-wrap:wrap;padding:0}
+.phase .chip{text-decoration:none}

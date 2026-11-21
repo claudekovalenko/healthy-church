@@ -1,5 +1,5 @@
 /* Offline support: cache the app shell, serve from cache first, refresh in the background. */
-const CACHE = "hc-v2";
+const CACHE = "hc-v3";
 const ASSETS = [
   "./", "index.html", "app.css", "app.js", "data.js", "passages.js", "manifest.webmanifest",
   "icons/icon.svg", "icons/icon-192.png", "icons/icon-512.png",

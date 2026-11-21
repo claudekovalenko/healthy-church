@@ -645,3 +645,40 @@ const EVENT_TYPES = [
   ["begin", "Began"], ["stay", "Stayed"], ["left", "Left"], ["leaders", "Leaders"], ["visit", "Visited or strengthened"],
   ["letter", "Letter"], ["sent", "Sent out or gave"], ["trial", "Suffering"], ["later", "Later word"]
 ];
+
+// The six core elements: a summary of the patterns across every list in this app.
+// Each element names the marks, planting stages and pages that belong to it, and the
+// start-grid elements that measure it. The summary line is a plain description, not Scripture.
+// [name, phrase, where the phrase is from, summary, key references, pages that belong to it, START elements]
+const CORE = [
+  ["The word", "They devoted themselves to the apostles’ teaching", "Acts 2:42",
+    "Every church began with the word preached, and kept being taught and strengthened by it.",
+    ["Deuteronomy 31:12", "Nehemiah 8:8", "Acts 2:42", "Acts 14:21–22", "Acts 18:11", "Acts 20:20", "Colossians 3:16", "2 Timothy 4:2"],
+    ["mark-0", "mark-6", "stage-0", "stage-3"], ["word", "taught"]],
+  ["Faith and baptism", "many of the Corinthians who heard the message believed and were baptized", "Acts 18:8",
+    "People turned to God, believed, and were baptized into the body.",
+    ["Genesis 15:6", "Acts 2:38", "Acts 2:41", "Acts 8:12", "Acts 16:33–34", "Acts 18:8", "Romans 6:3–4", "1 Thessalonians 1:9"],
+    ["mark-4", "stage-1"], ["believed", "baptized"]],
+  ["Gathered as a family", "All the believers were together and had everything in common", "Acts 2:44",
+    "They met together, often in homes, for fellowship, the breaking of bread, prayer and praise, and loved one another in deed.",
+    ["Psalm 133:1", "Acts 2:44–46", "Acts 20:7", "Romans 12:13", "Romans 16:5", "Hebrews 10:24–25", "1 John 1:7"],
+    ["mark-1", "mark-2", "mark-3", "mark-5", "mark-7", "mark-8", "mark-9", "mark-10", "mark-11", "mark-17", "stage-2"], ["home"]],
+  ["Shepherds from within", "Paul and Barnabas appointed elders for them in each church", "Acts 14:23",
+    "Leaders were raised from among the believers, tested, appointed, and entrusted to train others.",
+    ["Exodus 18:21", "Jeremiah 3:15", "Acts 14:23", "Acts 20:28", "1 Timothy 3:2", "Titus 1:5", "2 Timothy 2:2", "1 Peter 5:2–3"],
+    ["mark-12", "mark-13", "mark-14", "stage-4", "stage-5", "stage-7", "stage-9", "leaders", "handoffs"], ["elders", "left"]],
+  ["Connected and sent", "your partnership in the gospel", "Philippians 1:5",
+    "No church stood alone: they were visited, written to and helped, and they sent workers out in turn.",
+    ["Isaiah 6:8", "Acts 13:2–3", "Acts 15:36", "Romans 15:26", "Philippians 1:5", "Colossians 4:16", "1 Thessalonians 1:8", "3 John 8"],
+    ["mark-18", "mark-19", "mark-20", "stage-6", "stage-8", "commission", "timeline"], []],
+  ["The Spirit and endurance", "the disciples were filled with joy and with the Holy Spirit", "Acts 13:52",
+    "The Holy Spirit gave life, power and holiness, and the churches held on through hardship.",
+    ["Joel 2:28–29", "Zechariah 4:6", "Acts 2:4", "Acts 4:31", "Acts 13:52", "Acts 14:22", "1 Thessalonians 1:6", "1 Peter 4:14"],
+    ["mark-15", "mark-16", "mark-21"], ["spirit", "suffered"]]
+];
+// Which elements Scripture shows at a church's start, and which came as it grew (indexes into CORE).
+const CORE_PHASES = [
+  ["At the start", "the word preached, people believing, gathered with the Spirit among them", [0, 1, 2, 5]],
+  ["As it grows", "leaders appointed from within, follow-up visits and letters, partnership with other churches", [3, 4]],
+  ["When mature", "all six carried by the church itself", [0, 1, 2, 3, 4, 5]]
+];
